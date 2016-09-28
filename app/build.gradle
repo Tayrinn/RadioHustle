@@ -37,7 +37,9 @@ ext {
     playServices = "9.4.0"
     glideVersion = "3.7.0"
     mobmetricalib = "2.42"
-    fantasyslide = "1.0.4"
+    fantasySlide = "1.0.4"
+    dagger = "2.6"
+
 }
 
 dependencies {
@@ -67,5 +69,8 @@ dependencies {
 
     compile "com.google.android.exoplayer:exoplayer:$exoplayer"
     compile "com.yandex.android:mobmetricalib:$mobmetricalib"
-    compile "com.github.mzule.fantasyslide:library:$fantasyslid"
+    compile "com.github.mzule.fantasyslide:library:$fantasySlide"
+
+    compile "com.google.dagger:dagger:$dagger"
+    apt "com.google.dagger:dagger-compiler:$dagger"
 }
